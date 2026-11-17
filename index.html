@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediaBoost - Agência de Publicidade</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+
+    <!-- BANNER PRINCIPAL -->
+    <header class="banner">
+        <img src="banner.png" alt="Banner MediaBoost">
+    </header>
+
+    <!-- COLABORAÇÕES -->
+    
+<section class="colaboracoes">
+
+    <h2>Colaborações artísticas</h2>
+
+    <div class="carrossel">
+        <button class="seta" onclick="mover(-1)">❮</button>
+
+        <div class="carrossel-lista" id="listaArtistas">
+
+            <div class="artista">
+                <img src="marina.png" alt="Marina Sena">
+                <h3>Marina Sena</h3>
+            </div>
+
+            <div class="artista">
+                <img src="xamã.png" alt="Xamã">
+                <h3>Xamã</h3>
+            </div>
+
+            <div class="artista">
+                <img src="Virgini.webp" alt="Virginia Fonseca">
+                <h3>Virginia Fonseca</h3>
+            </div>
+
+            <div class="artista">
+                <img src="anitta.png" alt="Anitta">
+                <h3>Anitta</h3>
+            </div>
+
+            <div class="artista">
+                <img src="oroc.jpg" alt="Orochi">
+                <h3>Orochi</h3>
+            </div>
+
+        </div>
+
+        <button class="seta" onclick="mover(1)">❯</button>
+    </div>
+
+</section>
+
+<script>
+function mover(direcao) {
+    const lista = document.getElementById("listaArtistas");
+
+    lista.scrollBy({
+        left: direcao * 300,
+        behavior: "smooth"
+    });
+}
+</script>
+    <!-- DESTAQUE -->
+    <section class="destaque">
+        <p>O IMPULSO QUE A SUA MARCA PRECISA PARA DECOLAR.</p>
+
+        <img src="banner2.png" alt="Logo MediaBoost">
+
+        <p>CONECTAMOS MARCAS E GRANDES CELEBRIDADES.</p>
+
+        <h2>Estratégia, Criatividade e Conexões</h2>
+    </section>
+
+    <!-- SOBRE NÓS -->
+    <section class="sobre">
+        <div class="texto-sobre">
+            <h2>Sobre nós</h2>
+
+            <p>
+                Duas mulheres decidiram criar uma agência de publicidade
+                para transformar ideias em projetos criativos. Juntas,
+                elas desenvolvem campanhas, cuidam das redes sociais e
+                ajudam marcas a crescerem, sempre com criatividade
+                e dedicação.
+            </p>
+        </div>
+
+        <img src="lr.png" alt="Equipe MediaBoost">
+    </section>
+
+    <section class="bastidores">
+
+        <img src="imagens/nota-musical.png" class="decoracao nota" alt="">
+
+        <a href="bastidores.html" class="cracha-link">
+            <img src="crachaa.png"
+                 alt="Crachá dos bastidores dos eventos">
+        </a>
+
+        <p class="chamada">
+            ACOMPANHE OS<br>
+            BASTIDORES<br>
+            DOS NOSSOS<br>
+            EVENTOS COM O<br>
+            PASSE VIP
+        </p>
+
+        <img src="imagens/estrelas.png" class="decoracao estrelas" alt="">
+
+    </section>
+<section class="empresas-parceiras">
+    <h2>Empresas parceiras</h2>
+<div class="logos-parceiros">
+    <span class="marca vivo">vivo</span>
+    <span class="marca ifood">iFood</span>
+    <span class="marca boticario">o BOTICÁRIO</span>
+    <span class="marca claro">Claro</span>
+    <span class="marca trident">Trident</span>
+
+    <span class="marca havaianas">havaianas</span>
+    <span class="marca nestle">Nestlé</span>
+    <span class="marca cacau">♡</span>
+    <span class="marca rock">Rock in Rio</span>
+    <span class="marca gemini">✦ Gemini</span>
+</div>
+</section>
+
+<footer class="rodape-parceiros">
+    <div class="texto-rodape">
+        <strong>Agência de publicidade<br>MediaBoost</strong>
+        <span class="linha"></span>
+        <strong>Sua marca em boas mãos</strong>
+    </div>
+
+    <a href="#contato" class="botao-contato">contato</a>
+
+    <div class="redes-sociais">
+        <a href="#">f</a>
+        <a href="#">◎</a>
+        <a href="#">◉</a>
+    </div>
+</footer>
+
+</main>
+    <div class="redes">
+        <a href="#">f</a>
+        <a href="#">◎</a>
+        <a href="#">◉</a>
+    </div>
+
+</footer>
+
+
+</body>
+</html>
+

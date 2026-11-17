@@ -1,0 +1,777 @@
+
+/* ==========================
+   CONFIGURAÇÃO GERAL
+========================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, serif;
+    background: #fbeaff;
+    color: #35104e;
+    width: 100%;
+}
+
+/* ==========================
+   BANNER PRINCIPAL
+========================== */
+
+.banner {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    border: 3px solid #7912c4;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    display: block;
+}
+
+/* ==========================
+   CARROSSEL DE ARTISTAS
+========================== */
+
+.colaboracoes {
+    width: 100%;
+    min-height: 330px;
+    background: #f9e8ff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 35px 30px;
+    gap: 20px;
+}
+
+/* TÍTULO À ESQUERDA */
+
+.colaboracoes h2 {
+    display: block;
+    width: 32%;
+    flex-shrink: 0;
+    text-align: center;
+    font-size: 55px;
+    line-height: 1.3;
+    color: #000;
+    margin: 0;
+}
+
+/* ÁREA DO CARROSSEL */
+
+.carrossel {
+    width: 68%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    min-width: 0;
+}
+
+/* FOTOS HORIZONTAIS */
+
+.carrossel-lista {
+    display: flex;
+    flex: 1;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 22px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    min-width: 0;
+}
+
+.carrossel-lista::-webkit-scrollbar {
+    display: none;
+}
+
+/* ARTISTAS */
+
+.artista {
+    flex: 0 0 calc((100% - 44px) / 3);
+    min-width: 0;
+    text-align: center;
+}
+
+/* FOTOS */
+
+.artista img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 0;
+    display: block;
+    border: 2px solid #d8c5e5;
+}
+
+/* NOMES */
+
+.artista h3 {
+    font-size: 17px;
+    color: #000;
+    margin-top: 8px;
+    line-height: 1.3;
+}
+
+/* SETAS */
+
+.seta {
+    width: 30px;
+    height: 40px;
+    background: transparent;
+    color: #000;
+    border: none;
+    border-radius: 0;
+    font-size: 25px;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.seta:hover {
+    color: #9415c9;
+    background: transparent;
+}
+
+/* ==========================
+   DESTAQUE MEDIABOOST
+========================== */
+
+.destaque {
+    width: 100%;
+    min-height: 350px;
+    padding: 40px;
+    background: #e6c2f5;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.destaque p {
+    width: 20%;
+    font-size: 22px;
+    color: #8b36b1;
+}
+
+.destaque img {
+    width: 400px;
+    height: 220px;
+    object-fit: contain;
+}
+
+.destaque h2 {
+    width: 100%;
+    font-size: 32px;
+    font-style: italic;
+    color: #8a19d0;
+    margin-top: 20px;
+}
+
+/* ==========================
+   SOBRE NÓS
+========================== */
+
+.sobre {
+    width: 100%;
+    min-height: 350px;
+    display: flex;
+    background: #49245b;
+    color: white;
+}
+
+.texto-sobre {
+    width: 50%;
+    padding: 50px;
+}
+
+.texto-sobre h2 {
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.texto-sobre p {
+    font-size: 20px;
+    line-height: 1.7;
+}
+
+.sobre img {
+    width: 50%;
+    height: 350px;
+    object-fit: cover;
+}
+
+/* ==========================
+   CHAMADA BASTIDORES
+========================== */
+
+.chamada {
+    width: 100%;
+    min-height: 320px;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #f6e5ff;
+}
+.chamada {
+    color: #6900a8;
+    font-family: 'Courier New', monospace;
+    font-size: clamp(18px, 3vw, 30px);
+    line-height: 1.2;
+    text-align: center;
+}
+
+.chamada img {
+    width: 200px;
+    height: 230px;
+    object-fit: contain;
+}
+
+.chamada div {
+    width: 50%;
+}
+
+.chamada p {
+    font-size: 28px;
+    line-height: 1.5;
+    color: #9140b1;
+    margin-bottom: 20px;
+}
+
+.botao {
+    display: inline-block;
+    background: #8b16c4;
+    color: white;
+    text-decoration: none;
+    padding: 15px 25px;
+    border-radius: 25px;
+    font-size: 18px;
+}
+
+.botao:hover {
+    background: #5d087f;
+}
+.empresas-parceiras {
+    background: #f8e7fc;
+    padding: 5px 10px 40px;
+    text-align: center;
+}
+
+.empresas-parceiras h2 {
+    font-family: Georgia, serif;
+    font-size: 34px;
+    color: #000;
+    margin: 0 0 20px;
+}
+
+.logos-parceiros {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 40px);
+    align-items: center;
+    justify-items: center;
+    gap: 0 10px;
+    padding: 0 5px 20px;
+    border-bottom: 1px solid #ead8ee;
+}
+
+.logos-parceiros img {
+    max-width: 115px;
+    max-height: 35px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+.rodape-parceiros {
+    min-height: 88px;
+    background: #d2a5ed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 15px 20px;
+}
+
+.texto-rodape {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-family: Arial, sans-serif;
+    font-size: 9px;
+}
+
+.linha {
+    height: 25px;
+    border-left: 1px solid #555;
+}
+
+.botao-contato {
+    background: #6500a5;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    padding: 6px 30px;
+    font: bold 11px Arial;
+}
+
+.redes-sociais {
+    display: flex;
+    gap: 5px;
+}
+
+.redes-sociais a {
+    background: #000;
+    color: #fff;
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-family: Arial;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .logos-parceiros {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        gap: 25px;
+    }
+
+    .rodape-parceiros {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .empresas-parceiras h2 {
+        font-size: 27px;
+    }
+    .logos span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    white-space: nowrap;
+}
+
+.vivo {
+    font-family: Arial, sans-serif;
+    font-size: 23px;
+    font-weight: 900;
+    letter-spacing: -1.5px;
+}
+
+.ifood {
+    font-family: Arial, sans-serif;
+    font-size: 21px;
+    font-weight: 900;
+    font-style: italic;
+    letter-spacing: -1.5px;
+}
+
+.boticario {
+    font-family: Arial, sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+    letter-spacing: -1px;
+}
+
+.claro {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 900;
+    letter-spacing: -1.5px;
+}
+
+.claro::after {
+    content: "✦";
+    font-size: 12px;
+    align-self: flex-start;
+}
+
+.trident {
+    font-family: Arial, sans-serif;
+    font-size: 21px;
+    font-weight: 900;
+    font-style: italic;
+    letter-spacing: -1.5px;
+}
+
+.havaianas {
+    font-family: Arial, sans-serif;
+    font-size: 19px;
+    font-weight: 900;
+    letter-spacing: -1px;
+}
+
+.nestle {
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+    font-weight: 900;
+    letter-spacing: -1px;
+}
+
+.cacau {
+    font-size: 19px;
+    border: 2px solid #333;
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+}
+
+.rock {
+    font-family: cursive;
+    font-size: 22px;
+    font-weight: bold;
+    font-style: italic;
+    transform: rotate(-5deg);
+}
+
+.gemini {
+    font-family: Arial, sans-serif;
+    font-size: 21px;
+    font-weight: 400;
+    letter-spacing: -1px;
+}
+}
+/* ==========================
+   EMPRESAS PARCEIRAS
+========================== */
+
+.parceiros {
+    width: 100%;
+    min-height: 250px;
+    padding: 45px;
+    text-align: center;
+    background: #f9e8ff;
+}
+
+.parceiros h2 {
+    font-size: 36px;
+    margin-bottom: 35px;
+}
+  
+
+/* ==========================
+   SEGUNDA PÁGINA - BASTIDORES
+========================== */
+
+.pagina-bastidores {
+    background: #dfc0f2;
+    padding: 0;
+}
+
+.painel-bastidores {
+    width: 100%;
+    min-height: 850px;
+    position: relative;
+    overflow: hidden;
+    background: #e6ccf5;
+    border: 3px solid #a100ff;
+}
+
+/* TÍTULO */
+
+.titulo-bastidores {
+    position: absolute;
+    top: 43%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    color: #45145d;
+    text-align: center;
+}
+
+/* CAIXAS */
+
+.caixa {
+    position: absolute;
+    background: #d0a5ed;
+    border-radius: 25px;
+    padding: 20px;
+    color: #401257;
+    width: 270px;
+}
+
+.caixa h2 {
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.caixa ul {
+    padding-left: 20px;
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+/* POSICIONAMENTO */
+
+.planejamento {
+    top: 9%;
+    left: 22%;
+}
+
+.criacao {
+    top: 9%;
+    right: 15%;
+}
+
+.pos-evento {
+    top: 40%;
+    left: 4%;
+}
+
+.divulgacao {
+    top: 40%;
+    right: 3%;
+    width: 300px;
+}
+
+.dia-evento {
+    bottom: 7%;
+    left: 20%;
+    width: 290px;
+}
+
+.producao {
+    bottom: 7%;
+    right: 22%;
+    width: 270px;
+}
+/* CRACHÁ DE BASTIDORES */
+.bastidores {
+    min-height: 320px;
+    padding: 30px 4%;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr 1fr;
+    align-items: center;
+    gap: 25px;
+    background: #f8e5fb;
+}
+
+.cracha-link {
+    display: block;
+    width: min(200%, 290px);
+    justify-self: center;
+    transition: transform .2s ease;
+}
+
+.cracha-link:hover {
+    transform: scale(1.06);
+}
+
+.cracha-link img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+/* ESTRELAS */
+
+.estrelas {
+    position: absolute;
+    top: 0;
+    left: 2%;
+    font-size: 100px;
+    color: #55216f;
+    line-height: 1;
+    transform: rotate(-15deg);
+}
+
+.estrelas span {
+    position: absolute;
+    top: 75px;
+    left: 45px;
+    font-size: 75px;
+}
+
+.estrelas span:last-child {
+    top: 130px;
+    left: 10px;
+    font-size: 55px;
+}
+
+/* DISCO */
+
+.disco {
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+    right: 5%;
+    bottom: 7%;
+}
+
+/* VOLTAR */
+
+.voltar {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #54206e;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* ==========================
+   RESPONSIVIDADE
+========================== */
+
+@media (max-width: 700px) {
+
+    .banner {
+        height: 250px;
+    }
+
+    /* CARROSSEL */
+
+    .colaboracoes {
+        flex-direction: column;
+        padding: 25px 15px;
+    }
+
+    .colaboracoes h2 {
+        width: 100%;
+        font-size: 35px;
+    }
+
+    .carrossel {
+        width: 100%;
+        gap: 8px;
+    }
+
+    .artista {
+        flex: 0 0 calc((100% - 22px) / 2);
+    }
+
+    .artista img {
+        height: 180px;
+    }
+
+    .artista h3 {
+        font-size: 15px;
+    }
+
+    /* DESTAQUE */
+
+    .destaque p {
+        width: 30%;
+        font-size: 14px;
+    }
+
+    .destaque img {
+        width: 160px;
+    }
+
+    /* SOBRE */
+
+    .sobre {
+        flex-direction: column;
+    }
+
+    .texto-sobre,
+    .sobre img {
+        width: 100%;
+    }
+
+    /* CHAMADA */
+
+    .chamada {
+        flex-wrap: wrap;
+    }
+
+    .chamada div {
+        width: 60%;
+    }
+
+    /* BASTIDORES */
+
+    .painel-bastidores {
+        min-height: auto;
+        padding: 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .titulo-bastidores,
+    .caixa,
+    .cracha,
+    .disco,
+    .estrelas,
+    .voltar {
+        position: static;
+        transform: none;
+    }
+
+    .titulo-bastidores {
+        font-size: 40px;
+    }
+
+    .caixa {
+        width: 90%;
+    }
+
+    .cracha {
+        width: 130px;
+        height: 170px;
+    }
+
+    .disco {
+        width: 120px;
+        height: 120px;
+    }
+
+    .voltar {
+        display: block;
+    }
+}
+
+
+{
+    box-shadow:
+        0 5px 15px rgba(111, 0, 160, 0.20),
+        0 0 8px rgba(160, 32, 208, 0.15);
+
+    transition: all 0.3s ease;
+}
+
+/* BORDAS SOFISTICADAS */
+
+.artista img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+
+
+    outline: 2px solid #d9a5ef;
+    outline-offset: 4px;
+
+    box-shadow: 0 6px 16px rgba(65, 15, 90, 0.18);
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+/* EFEITO AO PASSAR O MOUSE */
+
+.artista img:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 10px 22px rgba(65, 15, 90, 0.28);
+}
